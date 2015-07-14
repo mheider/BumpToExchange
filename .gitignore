@@ -11,3 +11,5 @@ source_gen*
 .project
 .settings/
 /bin/
+/.ensime_cache/
+/README.html
