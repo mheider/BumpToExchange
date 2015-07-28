@@ -38,6 +38,4 @@ class BumpSpec extends FlatSpec with Matchers {
     resource.equals(new Resource()) should be (true)
   }
 
-
-
 }
