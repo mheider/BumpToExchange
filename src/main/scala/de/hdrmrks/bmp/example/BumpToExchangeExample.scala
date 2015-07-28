@@ -1,5 +1,6 @@
 package de.hdrmrks.bmp
 
+import de.hdrmrks.bmp.example.ExchangeSocket
 import internal.Compartment
 import annotations.Role
 
@@ -13,7 +14,7 @@ object BumpToExchangeExample extends App {
     val resProv = new ResourceProvider()
     val resource = resProv.getResource()
 
-    val exchange = new Exchange(resource)
+    val exchange = new ExchangeSocket(resource)
 
     val receiver = new exchange.Receiver()
     val sender = new exchange.Sender()
