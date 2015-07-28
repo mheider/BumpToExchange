@@ -3,7 +3,7 @@ package de.hdrmrks.bmp
 import internal.Compartment
 import annotations.Role
 
-class Exchange(resource: Resource) extends Compartment {
+abstract class Exchange(resource: Resource) extends Compartment {
 
   def execute() {
     println("Executing exchange")
@@ -27,6 +27,10 @@ class Exchange(resource: Resource) extends Compartment {
     def send(receiver: Receiver, res : Resource) = {
       receiver.receive(res)
     }
+  }
+
+  @Role abstract class PeerDiscovery() {
+    def lookupPeeringPatners(): List[Device];
   }
 
 }
