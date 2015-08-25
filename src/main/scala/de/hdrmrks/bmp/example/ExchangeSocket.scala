@@ -57,7 +57,7 @@ class ExchangeSocket(resource: Resource) extends Exchange(resource) {
   }
 
   class PeerDiscovery extends super.PeerDiscovery {
-    override def lookupPeeringPatners(): List[Device] = {
+    override def lookupPeeringPartners(): List[Device] = {
       return List(new Device("iphone"), new Device("galaxyS6"))
     }
   }

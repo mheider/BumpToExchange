@@ -1,7 +1,10 @@
 
 scalaVersion := "2.11.6"
 
+version := "0.1.1"
+
 name := "BumpToExchange"
+organization := "de.hdrmrks.bte"
 
 javacOptions in Compile ++= Seq("-source", "1.7", "-target", "1.7")
 

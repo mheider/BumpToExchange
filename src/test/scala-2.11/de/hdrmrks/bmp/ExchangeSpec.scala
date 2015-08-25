@@ -64,14 +64,14 @@ class ExchangeSpec extends FlatSpec with Matchers {
     }
 
     class PeerDiscovery extends super.PeerDiscovery {
-      override def lookupPeeringPatners(): List[Device] = List(testDevice0, testDevice1);
+      override def lookupPeeringPartners(): List[Device] = List(testDevice0, testDevice1);
     }
   }
 
   "Exchange" should "send from sender to Receiver" in {
     new Bump {
       val testExchange = new TestExchange(testResource)
-      val devices = new testExchange.PeerDiscovery().lookupPeeringPatners()
+      val devices = new testExchange.PeerDiscovery().lookupPeeringPartners()
       val sender = new testExchange.Sender
       val receiver = new testExchange.Receiver
 
@@ -82,7 +82,7 @@ class ExchangeSpec extends FlatSpec with Matchers {
 
   "PeerDiscovery" should "return testDevices" in {
     val testExchange = new TestExchange(testResource)
-    val devices = new testExchange.PeerDiscovery().lookupPeeringPatners()
+    val devices = new testExchange.PeerDiscovery().lookupPeeringPartners()
     devices(0) should be(testDevice0)
     devices(1) should be(testDevice1)
   }

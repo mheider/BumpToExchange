@@ -35,7 +35,7 @@ object BumpToExchangeExample extends App {
 
     val exchange = new ExchangeSocket(resource)
 
-    val devices = new exchange.PeerDiscovery().lookupPeeringPatners();
+    val devices = new exchange.PeerDiscovery().lookupPeeringPartners();
 
     val receiver = new exchange.Receiver()
     val sender = new exchange.Sender()

@@ -60,7 +60,7 @@ abstract class Exchange(resource: Resource) extends Compartment {
   }
 
   @Role abstract class PeerDiscovery() {
-    def lookupPeeringPatners(): List[Device];
+    def lookupPeeringPartners(): List[Device];
   }
 
 }
