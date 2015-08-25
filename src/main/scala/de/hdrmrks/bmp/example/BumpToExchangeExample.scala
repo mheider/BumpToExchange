@@ -25,7 +25,7 @@
 package de.hdrmrks.bmp
 
 import de.hdrmrks.bmp.example.ExchangeSocket
-import internal.Compartment
+import scroll.internal.Compartment
 import annotations.Role
 
 object BumpToExchangeExample extends App {

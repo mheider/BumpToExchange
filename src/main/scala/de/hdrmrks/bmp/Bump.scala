@@ -24,7 +24,7 @@
 
 package de.hdrmrks.bmp
 
-import internal.Compartment
+import scroll.internal.Compartment
 import annotations.Role
 
 class Bump extends Compartment {

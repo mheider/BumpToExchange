@@ -25,7 +25,7 @@
 package de.hdrmrks.bmp
 
 import org.scalatest._
-import internal.Compartment
+import scroll.internal.Compartment
 
 /**
  * Created by markus on 28.07.15.
